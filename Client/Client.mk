@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=Client
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/aviad/Desktop/Ftp"
-ProjectPath            := "/home/aviad/Desktop/Ftp/Client"
+WorkspacePath          := "/home/aviad/git/SocketsProject"
+ProjectPath            := "/home/aviad/git/SocketsProject/Client"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -88,7 +88,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/aviad/Desktop/Ftp/Client/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/home/aviad/git/SocketsProject/Client/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.c$(DependSuffix): main.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM "main.c"
 
@@ -96,7 +96,7 @@ $(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
 	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) "main.c"
 
 $(IntermediateDirectory)/HashTable.c$(ObjectSuffix): HashTable.c $(IntermediateDirectory)/HashTable.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/aviad/Desktop/Ftp/Client/HashTable.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/HashTable.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/home/aviad/git/SocketsProject/Client/HashTable.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/HashTable.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/HashTable.c$(DependSuffix): HashTable.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/HashTable.c$(ObjectSuffix) -MF$(IntermediateDirectory)/HashTable.c$(DependSuffix) -MM "HashTable.c"
 

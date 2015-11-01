@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=Server
 ConfigurationName      :=Debug
-WorkspacePath          := "/home/aviad/Desktop/Ftp"
-ProjectPath            := "/home/aviad/Desktop/Ftp/Server"
+WorkspacePath          := "/home/aviad/git/SocketsProject"
+ProjectPath            := "/home/aviad/git/SocketsProject/Server"
 IntermediateDirectory  :=./Debug
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -88,7 +88,7 @@ PreBuild:
 ## Objects
 ##
 $(IntermediateDirectory)/main.c$(ObjectSuffix): main.c $(IntermediateDirectory)/main.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/aviad/Desktop/Ftp/Server/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/home/aviad/git/SocketsProject/Server/main.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/main.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/main.c$(DependSuffix): main.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/main.c$(ObjectSuffix) -MF$(IntermediateDirectory)/main.c$(DependSuffix) -MM "main.c"
 
@@ -96,7 +96,7 @@ $(IntermediateDirectory)/main.c$(PreprocessSuffix): main.c
 	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/main.c$(PreprocessSuffix) "main.c"
 
 $(IntermediateDirectory)/portAlloc.c$(ObjectSuffix): portAlloc.c $(IntermediateDirectory)/portAlloc.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/aviad/Desktop/Ftp/Server/portAlloc.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/portAlloc.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/home/aviad/git/SocketsProject/Server/portAlloc.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/portAlloc.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/portAlloc.c$(DependSuffix): portAlloc.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/portAlloc.c$(ObjectSuffix) -MF$(IntermediateDirectory)/portAlloc.c$(DependSuffix) -MM "portAlloc.c"
 
@@ -104,7 +104,7 @@ $(IntermediateDirectory)/portAlloc.c$(PreprocessSuffix): portAlloc.c
 	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/portAlloc.c$(PreprocessSuffix) "portAlloc.c"
 
 $(IntermediateDirectory)/Protocol.c$(ObjectSuffix): Protocol.c $(IntermediateDirectory)/Protocol.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/aviad/Desktop/Ftp/Server/Protocol.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Protocol.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/home/aviad/git/SocketsProject/Server/Protocol.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Protocol.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Protocol.c$(DependSuffix): Protocol.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Protocol.c$(ObjectSuffix) -MF$(IntermediateDirectory)/Protocol.c$(DependSuffix) -MM "Protocol.c"
 
@@ -112,7 +112,7 @@ $(IntermediateDirectory)/Protocol.c$(PreprocessSuffix): Protocol.c
 	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Protocol.c$(PreprocessSuffix) "Protocol.c"
 
 $(IntermediateDirectory)/binder.c$(ObjectSuffix): binder.c $(IntermediateDirectory)/binder.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/aviad/Desktop/Ftp/Server/binder.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/binder.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/home/aviad/git/SocketsProject/Server/binder.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/binder.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/binder.c$(DependSuffix): binder.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/binder.c$(ObjectSuffix) -MF$(IntermediateDirectory)/binder.c$(DependSuffix) -MM "binder.c"
 
@@ -120,7 +120,7 @@ $(IntermediateDirectory)/binder.c$(PreprocessSuffix): binder.c
 	@$(CC) $(CFLAGS) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/binder.c$(PreprocessSuffix) "binder.c"
 
 $(IntermediateDirectory)/HashTable.c$(ObjectSuffix): HashTable.c $(IntermediateDirectory)/HashTable.c$(DependSuffix)
-	$(CC) $(SourceSwitch) "/home/aviad/Desktop/Ftp/Server/HashTable.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/HashTable.c$(ObjectSuffix) $(IncludePath)
+	$(CC) $(SourceSwitch) "/home/aviad/git/SocketsProject/Server/HashTable.c" $(CFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/HashTable.c$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/HashTable.c$(DependSuffix): HashTable.c
 	@$(CC) $(CFLAGS) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/HashTable.c$(ObjectSuffix) -MF$(IntermediateDirectory)/HashTable.c$(DependSuffix) -MM "HashTable.c"
 
